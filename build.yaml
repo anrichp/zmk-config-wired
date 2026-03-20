@@ -23,3 +23,4 @@ include:
     shield: cradio_left
   - board: sparkfun_pro_micro_rp2040
     shield: cradio_right
+    shield: settings_reset
