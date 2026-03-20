@@ -31,19 +31,19 @@
 
         default_layer {
             bindings = <
-//    ┌───────────┬───┬───┬──────┬──────┐           ┌─────┬───────────┬───┬───┬───┐
-//    │     Q     │ W │ F │  P   │  B   │           │  J  │     L     │ U │ Y │ ' │
-//    ├───────────┼───┼───┼──────┼──────┤           ├─────┼───────────┼───┼───┼───┤
-//    │ mt lsft A │ R │ S │  T   │  G   │           │  M  │  lt 1 N   │ E │ I │ O │
-//    ├───────────┼───┼───┼──────┼──────┤           ├─────┼───────────┼───┼───┼───┤
-//    │     Z     │ X │ C │  D   │  V   │           │  K  │     H     │ , │ . │ / │
-//    └───────────┴───┴───┼──────┼──────┤           ├─────┼───────────┼───┴───┴───┘
-//                        │ lgui │ bspc │           │ spc │ lt 1 bspc │
-//                        └──────┴──────┘           └─────┴───────────┘
-  &kp Q         &kp W   &kp F   &kp P      &kp B                  &kp J       &kp L        &kp U       &kp Y     &kp SQT
-  &mt LSHFT A   &kp R   &kp S   &kp T      &kp G                  &kp M       &lt 1 N      &kp E       &kp I     &kp O
-  &kp Z         &kp X   &kp C   &kp D      &kp V                  &kp K       &kp H        &kp COMMA   &kp DOT   &kp FSLH
-                                &kp LGUI   &kp BSPC               &kp SPACE   &lt 1 BSPC
+//    ┌───────────┬───┬───┬────────┬──────┐           ┌──────────┬───────────┬───┬────────┬───┐
+//    │     Q     │ W │ F │   P    │  B   │           │    J     │     L     │ U │   Y    │ ' │
+//    ├───────────┼───┼───┼────────┼──────┤           ├──────────┼───────────┼───┼────────┼───┤
+//    │ mt lsft A │ R │ S │ lt 2 T │  G   │           │    M     │  lt 3 N   │ E │ lt 1 I │ O │
+//    ├───────────┼───┼───┼────────┼──────┤           ├──────────┼───────────┼───┼────────┼───┤
+//    │     Z     │ X │ C │   D    │  V   │           │    K     │     H     │ , │   .    │ / │
+//    └───────────┴───┴───┼────────┼──────┤           ├──────────┼───────────┼───┴────────┴───┘
+//                        │  lgui  │ bspc │           │ lt 4 spc │ lt 1 bspc │
+//                        └────────┴──────┘           └──────────┴───────────┘
+  &kp Q         &kp W   &kp F   &kp P      &kp B                  &kp J         &kp L        &kp U       &kp Y     &kp SQT
+  &mt LSHFT A   &kp R   &kp S   &lt 2 T    &kp G                  &kp M         &lt 3 N      &kp E       &lt 1 I   &kp O
+  &kp Z         &kp X   &kp C   &kp D      &kp V                  &kp K         &kp H        &kp COMMA   &kp DOT   &kp FSLH
+                                &kp LGUI   &kp BSPC               &lt 4 SPACE   &lt 1 BSPC
             >;
         };
 				number_layer {
@@ -116,19 +116,19 @@
 				};
 		thumb_layer {
 				bindings = <
-//    ┌─────┬─────┬─────┬─────┬─────┐           ┌─────┬─────┬─────┬─────┬─────┐
-//    │     │     │     │     │     │           │     │     │     │     │     │
-//    ├─────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼─────┤
-//    │     │     │     │     │     │           │     │     │     │     │     │
-//    ├─────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼─────┤
-//    │     │     │     │     │     │           │     │     │     │     │     │
-//    └─────┴─────┴─────┼─────┼─────┤           ├─────┼─────┼─────┴─────┴─────┘
-//                      │     │     │           │     │     │
-//                      └─────┴─────┘           └─────┴─────┘
-  &trans   &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &trans
-  &trans   &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &trans
-                             &trans   &trans               &trans   &trans
+//    ┌────────────────┬─────┬─────┬─────┬─────┐           ┌─────┬─────┬─────┬─────┬──────┐
+//    │                │     │     │     │     │           │     │     │     │     │      │
+//    ├────────────────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼──────┤
+//    │ &studio_unlock │     │     │     │     │           │     │     │     │     │      │
+//    ├────────────────┼─────┼─────┼─────┼─────┤           ├─────┼─────┼─────┼─────┼──────┤
+//    │      boot      │     │     │     │     │           │     │     │     │     │ boot │
+//    └────────────────┴─────┴─────┼─────┼─────┤           ├─────┼─────┼─────┴─────┴──────┘
+//                                 │     │     │           │     │     │
+//                                 └─────┴─────┘           └─────┴─────┘
+  &trans           &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &trans
+  &studio_unlock   &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &trans
+  &bootloader      &trans   &trans   &trans   &trans               &trans   &trans   &trans   &trans   &bootloader
+                                     &trans   &trans               &trans   &trans
 					>;
 				};
 		};
